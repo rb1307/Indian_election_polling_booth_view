@@ -1,0 +1,3 @@
+{"district":"Dindigul","input_file_type":"excel","district_file":"Dindigul_district.xlsx","zone":"Chennai","village_file":"TN Village List_AC_PC_Mapped.xlsx","mapped_flag":"1" , "election_years":["2014","2016","2019"],
+"village_identifier" :  "(","ward_identifier": "ward" , "bigram_match_file": "TN_bigram_to_village_mappings.json" , "match_type" : "bigram", "config_file_path": "/home/hp/TN_2021_elect./analytics/PBR_automation/Tamil_nadu",
+"state_file_path" :  "/home/hp/TN_2021_elect./analytics/PBR_automation/Tamil_nadu/","output_file" : "district_mappings.xlsx"}
