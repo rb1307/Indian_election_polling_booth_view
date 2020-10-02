@@ -1,3 +1,9 @@
+"""
+@Romit Bhattacharyya
+Uses bi-gram overlap analysis to create the input file to find closely matched words from database
+"""
+
+
 import pandas as pd
 import logging
 import input
