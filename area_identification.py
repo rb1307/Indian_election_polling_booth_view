@@ -1,6 +1,11 @@
 """
-@FOR UNMAPPED DATA...MAPPING HAS TO RUN ON ALL PAST ELECTION YEARS
-@FOR MAPPED DATA.....MAPPING HAS TO RUN ON ONLY LAST ELECTION.
+The script :takes in input polling area data and aggregate all polling booths to find village/ward data.
+           : works for both mapped and unmapped data
+           :uses k_gram analysis and jacobian index to find the closely matched word
+Inputs : 1. District Data of polling area
+         2. Village list of District
+         3. Polling booth result of previous years.  
+
 """
 
 import logging
@@ -13,7 +18,8 @@ import json
 
 logging.basicConfig(level=logging.INFO)
 
-class ExtractVillageNames:
+
+class MapVillageNames:
     def __init__(self, **kwargs):
         self.params={}
         self.params.update(kwargs)
@@ -75,5 +81,5 @@ class ExtractVillageNames:
 
 if __name__ == '__main__':
     config_dict = input.read_json(json_file="input_config.json")
-    state_object = ExtractVillageNames(**config_dict)
+    state_object = MapVillageNames(**config_dict)
     state_object.output_excel()
